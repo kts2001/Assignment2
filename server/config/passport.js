@@ -1,3 +1,4 @@
+/*
 const passport = require('passport');
 
 module.exports = function() {
@@ -17,3 +18,4 @@ module.exports = function() {
 
   require('./local')();
 };
+*/

@@ -1,3 +1,4 @@
+/*
 let User = require('../models/user');
 let passport = require('passport');
 
@@ -95,3 +96,4 @@ module.exports.signin = function(req, res, next){
   })(req, res, next);
   delete req.session.url;
 }
+*/

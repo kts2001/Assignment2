@@ -1,3 +1,4 @@
+/*
 let mongoose = require('mongoose');
 let crypto = require('crypto');
 let Schema = mongoose.Schema;
@@ -92,3 +93,4 @@ UserSchema.set('toJSON', {
 });
 
 module.exports = mongoose.model('User', UserSchema);
+*/

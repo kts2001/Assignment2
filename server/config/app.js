@@ -6,13 +6,15 @@ var logger = require('morgan');
 
 let mongoose = require('mongoose');
 let DB = require('./db');
+
+/*
 let compress = require('compression');
 let bodyParser = require('body-parser');
 let methodOverride = require('method-override');
 let session = require('express-session');
 let flash = require('connect-flash');
 let passport = require('passport');
-
+*/
 mongoose.connect(DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 let mongoDB = mongoose.connection;
@@ -33,12 +35,13 @@ let businessRouter = require('../routes/business.js');
 
 let app = express();
 
+/*
 app.use(session({
   saveUninitialized: true,
   resave: true,
   secret: "sessionSecret"
 }));
-
+*/
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
@@ -58,6 +61,7 @@ app.use('/services',servicesRouter);
 app.use('/contact',contactRouter);
 
 app.use('/business-list', businessRouter);
+/*
 // Sets up passport
 app.use(flash());
 app.use(passport.initialize());
@@ -67,7 +71,7 @@ app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/inventory', inventoryRouter);
-
+*/
 
 
 

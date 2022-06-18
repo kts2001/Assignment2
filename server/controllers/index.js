@@ -1,3 +1,4 @@
+/*
 exports.home = function(req, res, next) {
     console.log('===> Original URL: ' + req.session.url);
     res.render('index', { 
@@ -19,3 +20,4 @@ exports.projects = function(req, res, next) {
       userName: req.user ? req.user.username : '' 
     });
 }
+*/
